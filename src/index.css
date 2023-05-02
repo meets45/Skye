@@ -1,13 +1,126 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #f1f1f1;
+  font-family: "poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.marker {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.width80 {
+  width: 90%;
+}
+
+.width50 {
+  width: 50%;
+}
+.width70 {
+  width: 65%;
+}
+.mt5 {
+  margin-top: 15%;
+}
+.width40 {
+  width: 30%;
+}
+.weather {
+  display: flex;
+  width: 50%;
+  height: 35vh;
+  background-color: #ffffff;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.leftw {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 20px;
+  flex: 40%;
+}
+.rightw {
+  display: flex;
+  flex-direction: column;
+  flex: 45%;
+  margin: 30px;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+.fend {
+  margin-top: 20px;
+}
+.fm {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  height: 40%;
+}
+.sf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.se {
+  align-self: flex-end;
+  /* margin-top: 10px; */
+  cursor: pointer;
+  font-size: large;
+  position: relative;
+}
+
+.se::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.se:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.op {
+  height: 5.8vh;
+  margin-left: 10px;
+}
+.op:hover {
+  background-color: white;
+  color: #000;
+}
+.ht5 {
+  padding: 15px;
+  height: 6vh;
+}
+
+.brand {
+  margin-left: 20px;
+  font-size: xx-large;
 }
